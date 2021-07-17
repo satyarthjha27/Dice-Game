@@ -7,14 +7,11 @@ return rand;
 }
 var randomNumber1=randomNo(); //1-6
  var randomImageSource="images/dice" +randomNumber1+ ".png";//images/dice1.png - images/dice6.png
-// document.querySelector(".img1").setAttribute("src","randomNumberSource1");
+ document.querySelectorAll("img")[0].setAttribute("src",randomImageSource);
 
 var randomNumber2=randomNo();//1-6
 var randomImageSource2="images/dice"+randomNumber2+".png";//images/dice1.png - images/dice6.png
 
-var image1 = document.querySelectorAll("img")[0];
-
-image1.setAttribute("src", randomImageSource);
 
 document.querySelectorAll("img")[1].setAttribute("src", randomImageSource2);
 
